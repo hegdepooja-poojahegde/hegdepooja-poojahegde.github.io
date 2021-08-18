@@ -34,13 +34,21 @@
       <meta name="msapplication-TileImage" content="img/fevicon.png" />
       <style type="text/css" title="dynamic-css" class="options-output">body{background-color:#FFFFFF;}body{line-height:30px;font-weight:400;font-style:normal;color:#656565;font-size:14px;}.header_hero_wrapper{background-color:#a73030;background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:center center;background-image:url('wp-content/uploads/2018/02/hero_area_bg.jpg');}.header_banner_wrapper{background-color:#a73030;background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:center center;background-image:url('wp-content/uploads/2018/02/banner_bg.jpg');}.partner_area{background-color:#e0162a;background-image:url('wp-content/uploads/2018/02/partner_bg.jpg');}.footer_social_area{background-color:#3c1525;}.copyright_text{color:#e0162a;}.copyright_text{background-color:#3c1525;}</style>
       <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1521086455466{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 130px !important;padding-bottom: 88px !important;background-color: #3c1525 !important;}.vc_custom_1497239231350{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;background-color: #3c1525 !important;}.vc_custom_1497240173685{background-image: url(wp-content/uploads/2017/06/bio-bgb4d1.jpg?id=190) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1521086570621{padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1497239379426{padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1521086531168{margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1497240357816{margin-bottom: 0px !important;border-bottom-width: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1497239379426{padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1521090171069{margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1510035994811{padding-top: 130px !important;padding-bottom: 95px !important;}</style>
-	  
 	  <style>
+		.questions:checked ~ h5{border-radius: 7px 7px 0px 0px;}
+		.biographie_content_three_text p {color: #795548;}
+		.faq-box{border: 1px solid rgb(205, 205, 205); padding: 27px 30px; margin: 0px auto 30px; text-align: left;border-radius: 10px;}
+		.question{border-radius: 7px;color:#fff;position:relative;background:#e0162a;margin:0;padding:10px 10px 10px 	50px;display:block;width:100%;cursor:pointer}
+		.answers{border-radius: 0 0 7px 7px;font-weight:300;background:#e4e4e6;padding:0 15px;margin:0;height:0;overflow:hidden;z-index:-1;position:relative;opacity:0;-webkit-transition:.7s ease;-moz-transition:.7s ease;-o-transition:.7s ease;transition:.7s ease}
+		.questions:checked ~ .answers{height:auto;opacity:1;padding:15px;z-index:auto}	.plus{color:#fff;position:absolute;margin-left:10px;margin-top:7px;z-index:5;font-size:2em;line-height:100%;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;-webkit-transition:.3s ease;-moz-transition:.3s ease;-o-transition:.3s ease;transition:.3s ease}
+		.questions:checked ~ .plus{-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg)}
+		.questions{display:none}
 		.white-txt {color:#fefefe;font-family: "poppins-regular";}
 		.wpb_single_image img {padding-bottom: 15px;}
 		@media screen and (min-width: 1200px) {
 			.wpb_single_image img {max-width: 488px;}
 		}
+		h5{color:#fefefe;font-family:"poppins-regular";}
 	  </style>
       <noscript>
          <style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style>
@@ -301,23 +309,95 @@
                                  <div class="vc_column-inner vc_custom_1510035994811">
                                     <div class="wpb_wrapper">
                                        <div class="wpb_text_column wpb_content_element  biographie_content_three_text" >
-                                          <div class="wpb_wrapper">
-                                             <style>h5{color:#fefefe;font-family:"poppins-regular";}</style>
+                                          <div class="wpb_wrapper" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                              <h3>Fans Asked Questions</h3>
-                                             <h5>What is the height of Pooja Hegde?</h5>
-                                             <p>1.98 m</p>
-                                             <h5>Pooja Hegde's ringtone?</h5>
-                                             <p>Not sure... something basic, my phone is ALWAYS on silent...</p>
-                                             <h5>Pooja Hegde's opinion about Hrithik Roshan</h5>
-                                             <p>Forever drooling over this man beautiful, inside and out! So rar.</p>
-                                             <h5>Pooja Hegde's favourite singer</h5>
-                                             <p>A R Rahman</p>
-                                             <h5>If you weren't a actor... which professio would you prefer the most?</h5>
-                                             <p>Stylist / Photographer</p>
-                                             <h5>Pooja Hegde's frequently used mobile app?</h5>
-                                             <p>WhatsApp and Instagram</p>
-                                             <h5>What's your hair strength secret?</h5>
-                                             <p>Coconut oil.</p>
+											 
+											 <div class="faq-box">
+												<input type="checkbox" id="QUES1" class="questions">
+												<div class="plus">+</div>
+												<h5 itemprop="name" class="question" onclick="CheckMyFAQ(1)">What is the height of Pooja Hegde?</h5>
+												<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="answers" id="ANS1">
+													<div itemprop="text">
+														<p>1.98 m</p>
+													</div>
+												</div>
+											</div>
+
+											 <div class="faq-box">
+												<input type="checkbox" id="QUES2" class="questions">
+												<div class="plus">+</div>
+												<h5 itemprop="name" class="question" onclick="CheckMyFAQ(2)">Pooja Hegde's ringtone?</h5>
+												<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="answers" id="ANS2">
+													<div itemprop="text">
+														<p>Not sure... something basic, my phone is ALWAYS on silent...</p>
+													</div>
+												</div>
+											</div>
+
+											 <div class="faq-box">
+												<input type="checkbox" id="QUES4" class="questions">
+												<div class="plus">+</div>
+												<h5 itemprop="name" class="question" onclick="CheckMyFAQ(4)">Pooja Hegde's opinion about Hrithik Roshan</h5>
+												<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="answers" id="ANS4">
+													<div itemprop="text">
+														<p>Forever drooling over this man beautiful, inside and out! So rar.</p>
+													</div>
+												</div>
+											</div>
+											
+											 <div class="faq-box">
+												<input type="checkbox" id="QUES5" class="questions">
+												<div class="plus">+</div>
+												<h5 itemprop="name" class="question" onclick="CheckMyFAQ(5)">Pooja Hegde's favourite singer</h5>
+												<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="answers" id="ANS5">
+													<div itemprop="text">
+														<p>A R Rahman</p>
+													</div>
+												</div>
+											</div>
+
+											 <div class="faq-box">
+												<input type="checkbox" id="QUES6" class="questions">
+												<div class="plus">+</div>
+												<h5 itemprop="name" class="question" onclick="CheckMyFAQ(6)">If you weren't a actor... which professio would you prefer the most?</h5>
+												<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="answers" id="ANS6">
+													<div itemprop="text">
+														<p>Stylist / Photographer</p>
+													</div>
+												</div>
+											</div>
+											 <div class="faq-box">
+												<input type="checkbox" id="QUES7" class="questions">
+												<div class="plus">+</div>
+												<h5 itemprop="name" class="question" onclick="CheckMyFAQ(7)">Pooja Hegde's frequently used mobile app?</h5>
+												<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="answers" id="ANS7">
+													<div itemprop="text">
+														<p>WhatsApp and Instagram</p>
+													</div>
+												</div>
+											</div>
+											 <div class="faq-box">
+												<input type="checkbox" id="QUES8" class="questions">
+												<div class="plus">+</div>
+												<h5 itemprop="name" class="question" onclick="CheckMyFAQ(8)">What's your hair strength secret?</h5>
+												<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="answers" id="ANS8">
+													<div itemprop="text">
+														<p>Coconut oil.</p>
+													</div>
+												</div>
+											</div>
+<!--
+											 <div class="faq-box">
+												<input type="checkbox" id="QUES{2}" class="questions">
+												<div class="plus">+</div>
+												<h5 itemprop="name" class="question" onclick="CheckMyFAQ({2})">AAAAAAAAAAAAAAAAAAAAAAAA</h5>
+												<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="answers" id="ANS{2}">
+													<div itemprop="text">
+														<p>BBBBBBBBBBBB</p>
+													</div>
+												</div>
+											</div>
+-->											
                                           </div>
                                        </div>
                                     </div>
@@ -488,5 +568,16 @@
       <script type='text/javascript' src='wp-content/themes/direkuta/js/active8a54.js?ver=1.0.0'></script>
       <script type='text/javascript' src='wp-includes/js/wp-embed.min761a.js?ver=4.9.14'></script>
       <script type='text/javascript' src='wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min8b06.js?ver=5.4.7'></script>
+	  <script>
+function CheckMyFAQ(id) {
+	var x = document.getElementById('QUES'+id);
+	if (x.hasAttribute("checked")) {
+		x.removeAttribute("checked");
+	} else {
+		x.setAttribute("checked", "checked");
+	}
+}
+</script>
+
    </body>
 </html>
